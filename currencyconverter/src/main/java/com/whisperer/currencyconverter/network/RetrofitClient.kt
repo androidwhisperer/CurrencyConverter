@@ -1,6 +1,5 @@
 package com.whisperer.currencyconverter.network
 
-import com.whisperer.currencyconverter.BuildConfig
 import com.whisperer.currencyconverter.data.CurrencyConverterConfig
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
