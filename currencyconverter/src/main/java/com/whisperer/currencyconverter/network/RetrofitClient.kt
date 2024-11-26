@@ -1,11 +1,13 @@
 package com.whisperer.currencyconverter.network
 
 import com.whisperer.currencyconverter.BuildConfig
+import com.whisperer.currencyconverter.data.CurrencyConverterConfig
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitClient {
-    private const val API_KEY = BuildConfig.API_KEY
-    private const val BASE_URL = "https://v6.exchangerate-api.com/v6/$API_KEY/"
+
+    private val API_KEY = CurrencyConverterConfig.getApiKey()
+    private val BASE_URL = "https://v6.exchangerate-api.com/v6/$API_KEY/"
 
     private val retrofit: Retrofit by lazy {
         Retrofit.Builder()

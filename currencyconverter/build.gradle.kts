@@ -24,9 +24,7 @@ android {
                 "proguard-rules.pro"
 
             )
-            defaultConfig {
-                buildConfigField ("String", "API_KEY", "\"YOUR API KEY HERE\"")
-            }
+
 
         }
     }
